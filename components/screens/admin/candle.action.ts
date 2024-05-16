@@ -5,5 +5,6 @@ import { redirect } from "next/navigation";
 
 export default async function action(id: string) {
   revalidatePath(`/candles/${id}`);
+  revalidatePath("/");
   redirect(`/candles/${id}`);
 }

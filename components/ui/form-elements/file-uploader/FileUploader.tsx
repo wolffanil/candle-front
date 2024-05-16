@@ -38,16 +38,16 @@ const FileUploader: FC<IFileUploader> = ({
           />
         </div>
       ) : (
-        <div className="flex-center flex-col py-5 text-grey-500">
+        <div className="flex justify-center items-center flex-col py-5 text-grey-500">
           <img
-            src="/assets/icons/upload.svg"
+            src="/img/file-upload.svg"
             width={77}
             height={77}
             alt="file upload"
           />
           <h3 className="mb-2 mt-2">Перетощить фото сюда</h3>
           <p className="p-medium-12 mb-4">SVG, PNG, JPG</p>
-          <Button type="button" className="rounded-full text-[22px]">
+          <Button type="button" className="rounded-full text-[18px]">
             Выбрать в компютере
           </Button>
         </div>

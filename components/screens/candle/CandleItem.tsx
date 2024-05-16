@@ -59,7 +59,7 @@ function CandleItem({ candle }: { candle: ICandle }) {
         <p className={textStyle}>{candle.smell}</p>
 
         <p className={textStyle}>Объём:</p>
-        <p className={textStyle}>~ {candle.volume}</p>
+        <p className={textStyle}>~ {candle.volume} часов горения</p>
 
         <ButtonActions candleId={candle._id} />
       </div>

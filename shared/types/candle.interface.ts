@@ -8,6 +8,7 @@ export interface ICandle {
   currentPrice: number;
   discount: number;
   photoUrl: string;
+  updatedAt: string;
 }
 
 export interface ICandleEditInput extends Omit<ICandle, "_id"> {}

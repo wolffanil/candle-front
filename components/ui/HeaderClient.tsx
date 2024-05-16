@@ -28,7 +28,10 @@ function HeaderClient() {
             <p onClick={handleLogout}>Выйти</p>
           </div>
         ) : (
-          <Link href="/login" className="text-white text-[32px]">
+          <Link
+            href="/login"
+            className="text-white text-[32px] h-full w-full flex justify-center items-center"
+          >
             Вход
           </Link>
         )}

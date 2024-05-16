@@ -92,7 +92,7 @@ function AdminComponent({ candle, type }: IAdmin) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col bg-hoar-100 min-h-[950px]  w-[560px] rounded-tl-[93px] pt-[63px] px-[95px]"
+      className="flex flex-col bg-hoar-100 min-h-[950px]  w-[560px] rounded-tl-[93px] pt-[63px] px-[95px] mb-[60px] pb-[30px]"
     >
       <h2 className="font-miama text-black text-center mb-[50px] text-5xl">
         {type === "Create" ? "Создать свечу" : "Редактировать свечу"}

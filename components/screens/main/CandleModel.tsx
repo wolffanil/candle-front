@@ -14,8 +14,12 @@ function CandleModel() {
   console.log(candleModel, "model");
   return (
     <>
-      <directionalLight position={[1, 2, 3]} intensity={1.7} />
-      <ambientLight intensity={1.8} />
+      <directionalLight
+        position={[1, 2, 3]}
+        intensity={1.9}
+        color={"#E5DBD0"}
+      />
+      <ambientLight intensity={2.5} />
       <primitive
         object={candleModel.scene}
         ref={candleRef}
