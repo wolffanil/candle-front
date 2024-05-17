@@ -1,3 +1,5 @@
+"use client";
+
 import { Controller } from "react-hook-form";
 import { IField } from "./field.interface";
 import cn from "clsx";
