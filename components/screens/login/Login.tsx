@@ -33,6 +33,7 @@ function Login() {
         name="password"
         placeholder="Пароль"
         className="mt-[50px]"
+        type="password"
       />
 
       <p className="font-cruinn text-black text-[32px] mt-[35px] w-full">

@@ -30,7 +30,7 @@ function Footer({ hasDiscount }: { hasDiscount?: boolean }) {
           />
 
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2133.718862242939!2d49.64544009512967!3d58.59599728506186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43fcf5db99bd7657%3A0xac36c4f330850036!2sMagazin%20Svechey%20Zazhiganiya!5e0!3m2!1sen!2sus!4v1715705630772!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1436.3602548451902!2d48.05508158879526!3d46.35979200676518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a9050ac81b9691%3A0x888dab3ce4bf82ba!2z0L_Quy4g0JLQvtC60LfQsNC70YzQvdCw0Y8sIDExLCDQkNGB0YLRgNCw0YXQsNC90YwsINCQ0YHRgtGA0LDRhdCw0L3RgdC60LDRjyDQvtCx0LsuLCA0MTQwNDA!5e0!3m2!1sru!2sru!4v1715975190711!5m2!1sru!2sru"
             width="719"
             height="317"
             loading="lazy"

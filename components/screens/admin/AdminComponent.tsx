@@ -47,9 +47,11 @@ function AdminComponent({ candle, type }: IAdmin) {
     let uploadedImageUrl = values.photoUrl;
 
     if (files.length > 0) {
-      const uploadedImages = await startUpload(files);
+      let uploadedImages;
+      uploadedImages = await startUpload(files);
 
       if (!uploadedImages) {
+        toast.error("Что-то пошло не так", { id: toastId });
         return;
       }
       //@ts-ignore
@@ -167,7 +169,7 @@ function AdminComponent({ candle, type }: IAdmin) {
         )}
       />
 
-      <Button className="mt-[40px]" type="submit" disabled={isLoading}>
+      <Button className="mt-[10px]" type="submit" disabled={isLoading}>
         {type === "Create" ? "Создать" : "Редактировать"}
       </Button>
     </form>

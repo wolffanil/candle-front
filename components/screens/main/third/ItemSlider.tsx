@@ -25,10 +25,10 @@ function ItemSlider({ candle }: { candle: ICandle }) {
 
       <div
         className={cn(
-          "max-w-[257px] text-white font-cruinn text-[32px] text-wrap flex flex-col items-start gap-y-[17px] absolute left-[11px] z-30",
+          "max-w-[260px] text-white font-cruinn text-[32px] text-wrap flex flex-col items-start gap-y-[17px] absolute left-[11px] z-30 ",
           {
             "bottom-[30px] animate-in duration-300 ": isHover,
-            "-bottom-[120px] animate-out duration-300": !isHover,
+            "-bottom-[160px] animate-out duration-300": !isHover,
           }
         )}
       >

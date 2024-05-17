@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 function page() {
   return (
     <section className="bg-hoar-300 ">
-      <Wrapper className="flex justify-center items-center">
+      <Wrapper className="flex justify-center items-center ">
         <AdminComponent type="Create" />
       </Wrapper>
     </section>

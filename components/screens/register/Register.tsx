@@ -48,6 +48,7 @@ function Register() {
         name="password"
         placeholder="Пароль"
         className="mt-[40px]"
+        type="password"
       />
 
       <Field<IRegister>
@@ -55,6 +56,7 @@ function Register() {
         name="confirmPassword"
         placeholder="Повтор пароля"
         className="mt-[40px]"
+        type="password"
       />
 
       <p className="font-cruinn text-black text-[32px] mt-[27px] mb-[33px]">

@@ -46,8 +46,8 @@ const FileUploader: FC<IFileUploader> = ({
             alt="file upload"
           />
           <h3 className="mb-2 mt-2">Перетощить фото сюда</h3>
-          <p className="p-medium-12 mb-4">SVG, PNG, JPG</p>
-          <Button type="button" className="rounded-full text-[18px]">
+          <p className=" mb-4">SVG, PNG, JPG</p>
+          <Button type="button" className="rounded-full !text-[18px]">
             Выбрать в компютере
           </Button>
         </div>

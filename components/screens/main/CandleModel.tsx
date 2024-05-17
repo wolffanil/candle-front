@@ -11,7 +11,6 @@ function CandleModel() {
     candleRef.current.rotation.y += delta * 0.4;
   });
 
-  console.log(candleModel, "model");
   return (
     <>
       <directionalLight
