@@ -9,7 +9,7 @@ function Header() {
         <Logo />
         <div className="flex justify-between items-center gap-x-[62px]">
           <li className="font-cruinn text-[32px] text-black">
-            <Link href="/constructor">Конструктор</Link>
+            <Link href="/constructorbeta">Конструктор</Link>
           </li>
 
           <HeaderClient />

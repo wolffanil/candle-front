@@ -16,7 +16,7 @@ export const socialMedia = [
 export const mapSite = [
   {
     title: "Конструктор",
-    href: "/constructor",
+    href: "/constructorbeta",
   },
   {
     title: "Новости",
