@@ -1,4 +1,4 @@
-import Constructor from "@/components/screens/constructor/Constructor";
+import ConstructorComponent from "@/components/screens/constructor/Constructor";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 function page() {
-  return <Constructor />;
+  return <ConstructorComponent />;
 }
 
 export default page;

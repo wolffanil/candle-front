@@ -1,6 +1,6 @@
 import { Logo, Wrapper } from "@/components/ui";
 
-function Constructor() {
+function ConstructorComponent() {
   return (
     <section className="bg-[url(/background/soon-bg.jpg)] bg-cover bg-no-repeat bg-center min-h-screen">
       <Wrapper>
@@ -17,4 +17,4 @@ function Constructor() {
   );
 }
 
-export default Constructor;
+export default ConstructorComponent;
