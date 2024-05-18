@@ -47,9 +47,7 @@ export const candleValidate = z.object({
     .min(3, { message: "Минимум 3 символа" }),
   volume: z
     .string({ message: "Это поле обязательно" })
-    .min(3, { message: "Минимум 3 символа" }),
-  // currentPrice: z.number({ message: "Это поле обязательно" }),
-  // discount: z.number({ message: "Это поле обязательно" }),
+    .min(1, { message: "Минимум 3 символа" }),
   photoUrl: z.custom(),
   currentPrice: z.custom(),
   discount: z.custom(),

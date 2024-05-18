@@ -13,6 +13,7 @@ function ItemSlider({ candle }: { candle: ICandle }) {
       className=" block overflow-hidden max-w-[328px] max-h-[400px] border border-black rounded-tl-[120px] rounded-tr-[120px]  relative min-w-[328px] min-h-[400px] group"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
+      role="button"
     >
       <Image
         src={candle.photoUrl}

@@ -10,7 +10,7 @@ function First() {
           <h1>
             Создаём уют в твоём <span className="font-miama">сердце</span>
           </h1>
-          <Link href="/constructor">
+          <Link href="/constructorbeta">
             <Button className="w-[234px] mt-[12px]">Создать</Button>
           </Link>
         </div>

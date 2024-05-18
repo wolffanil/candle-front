@@ -1,6 +1,5 @@
 import { useAuth } from "@/hooks/useAuth";
 import { useToast } from "@/hooks/useToast";
-import { errorCatch } from "@/services/api/error.api";
 import { AuthService } from "@/services/auth/auth.service";
 import { ILogin } from "@/shared/types/auth.interface";
 import { useMutation } from "@tanstack/react-query";
@@ -31,7 +30,7 @@ export const useLogin = (reset: UseFormReset<ILogin>) => {
   });
 
   const onLogin = (data: ILogin) => {
-    loadingToast("Регистрация...");
+    loadingToast("Вход...");
     login(data);
   };
 
