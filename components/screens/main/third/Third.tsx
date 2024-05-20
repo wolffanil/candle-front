@@ -5,7 +5,7 @@ async function Third() {
   const { candles } = await fetch(
     `${API_URL}/candles?limit=24&sort=-createdAt`,
     {
-      next: { revalidate: 60 },
+      next: { revalidate: 60, tags: ["main"] },
     }
   ).then((res) => res.json());
 
