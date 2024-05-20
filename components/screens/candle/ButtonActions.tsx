@@ -12,8 +12,10 @@ function ButtonActions({ candleId }: { candleId: string }) {
 
   return (
     <div className="mt-[70px] flex items-center">
-      <Link href="/order">
-        <Button className=" w-[348px] text-[24px]">Офрмить заказ</Button>
+      <Link href={user?.name ? "/order" : "/login"}>
+        <Button className=" min-w-[348px] text-[24px]">
+          {user?.name ? "Оформить заказ" : "Войти чтобы заказать"}
+        </Button>
       </Link>
 
       {user?.role === "admin" && (

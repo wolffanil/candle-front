@@ -1,15 +1,15 @@
 export const vidoes = [
   {
-    name: "иванова валерия",
+    name: "Иванова Валерия",
     videoUrl: "/videos/one.mp4",
     className: "mt-[67px]",
   },
   {
-    name: "иванова валерия",
+    name: "Никитина Вероника",
     videoUrl: "/videos/two.mp4",
   },
   {
-    name: "иванова валерия",
+    name: "Петрова Валентина",
     videoUrl: "/videos/three.mp4",
     className: "mt-[67px]",
   },

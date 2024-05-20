@@ -2,20 +2,12 @@ import { useEffect } from "react";
 import { useAuth } from "./useAuth";
 import { useRouter } from "next/navigation";
 
-export const useExistUser = (isAdmin?: boolean) => {
+export const useExistUser = () => {
   const { isLoading, user } = useAuth();
   const router = useRouter();
 
   useEffect(() => {
-    if (isAdmin) {
-      if (!isLoading && !user?.name && user?.role !== "admin") {
-        console.log(user);
-        router.push("/");
-      }
-    } else {
-      if (!isLoading && user?.name) {
-        router.push("/");
-      }
-    }
-  }, [user]);
+    if (isLoading) return;
+    if (user?.name) router.push("/");
+  }, [isLoading]);
 };

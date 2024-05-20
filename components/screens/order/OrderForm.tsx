@@ -1,18 +1,27 @@
 "use client";
 
 import { Button, Field } from "@/components/ui";
+import { useAuth } from "@/hooks/useAuth";
 import { IOrder } from "@/shared/types/order.interface";
 import { orderValidate } from "@/shared/validation";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 function OrderForm() {
+  const { user } = useAuth();
+  const router = useRouter();
   const [isSuccess, SetIsSuccess] = useState(false);
   const { handleSubmit, control } = useForm<IOrder>({
     resolver: zodResolver(orderValidate),
+    defaultValues: {
+      name: user?.name || "",
+      surname: user?.surname || "",
+    },
   });
 
+  if (!user?.name) router.push("/login");
   const onSubmit = () => {
     SetIsSuccess(true);
   };

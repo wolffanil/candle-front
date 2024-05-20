@@ -24,12 +24,12 @@ export const registerValidate = z
 export const loginValidate = z.object({
   name: z
     .string({ message: "Это поле обязательно" })
-    .min(5, { message: "имя не может быть ментше 5 символов" })
+    .min(5, { message: "имя не может быть меньше 5 символов" })
     .trim()
     .toLowerCase(),
   password: z
     .string({ message: "Это поле обязательно" })
-    .min(6, { message: "Слишком кароткий номер" }),
+    .min(6, { message: "Это поле обязательно" }),
 });
 
 export const candleValidate = z.object({
@@ -56,7 +56,7 @@ export const candleValidate = z.object({
 export const orderValidate = z.object({
   name: z
     .string({ message: "Это поле обязательно" })
-    .min(5, { message: "имя не может быть ментше 5 символов" }),
+    .min(5, { message: "имя не может быть меньше 5 символов" }),
   surname: z
     .string({ message: "Это поле обязательно" })
     .max(20, { message: "Превышена длина фамилии(20)" }),

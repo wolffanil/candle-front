@@ -22,7 +22,7 @@ const Phone = <T extends Record<string, any>>({
           )}
         >
           <InputMask
-            mask="+7 (___) __-__-__"
+            mask="+7 (___) ___-__-__"
             onChange={onChange}
             value={value}
             showMask
