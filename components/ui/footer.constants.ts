@@ -5,7 +5,7 @@ export const socialMedia = [
   },
   {
     img: "/img/social/vk.png",
-    href: "/",
+    href: "https://vk.com/club225973719",
   },
   {
     img: "/img/social/pinterest.png",
@@ -20,7 +20,7 @@ export const mapSite = [
   },
   {
     title: "Новости",
-    href: "/",
+    href: "/news",
   },
   {
     title: "Регистрация",

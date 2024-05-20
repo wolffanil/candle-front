@@ -74,9 +74,12 @@ function Register() {
           required
           className="bg-hoar-500 w-[22px] h-[23px]"
         />
-        <p className="font-cruinn text-[20px] text-black text-wrap">
+        <Link
+          href="/rules"
+          className="font-cruinn text-[20px] text-black text-wrap underline hover:text-hoar-300 duration-500"
+        >
           Согласие на обработку персональных данных
-        </p>
+        </Link>
       </div>
       <Button type="submit" disabled={isRegisterLoading} className="w-[300px]">
         Регистрация

@@ -29,7 +29,17 @@ export default async function sitemap() {
       priority: 0.5,
     },
     {
-      url: `${baseurl}/constructor`,
+      url: `${baseurl}/rules`,
+      lastModified: new Date(),
+      priority: 0.5,
+    },
+    {
+      url: `${baseurl}/news`,
+      lastModified: new Date(),
+      priority: 0.5,
+    },
+    {
+      url: `${baseurl}/constructorbeta`,
       lastModified: new Date(),
     },
     {
