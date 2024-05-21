@@ -4,7 +4,7 @@ import Model from "./Model";
 
 function First() {
   return (
-    <section className="w-full h-[923px] flex justify-between">
+    <section className="w-full h-[923px] flex justify-between relative">
       <div className="flex flex-col items-start mt-[284px]">
         <div className="flex flex-col gap-y-[12px] font-cruinn text-[32px] text-black">
           <h1>
@@ -20,6 +20,12 @@ function First() {
       <div className="w-[718px] h-[923px] shadow-custom rounded-tl-[80px] relative">
         <Model />
       </div>
+
+      <img
+        src="/img/line.png"
+        alt="line"
+        className="absolute top-[138px] right-[196px]"
+      />
     </section>
   );
 }
